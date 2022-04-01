@@ -13,7 +13,6 @@ const useMenuStyles = createUseStyles({
 		padding: 0,
 		alignItems: 'flex-end',
 		fontSize: 16,
-		color: '#202020',
 	},
 	logo: {
 		height: 40
