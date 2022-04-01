@@ -1,19 +1,19 @@
 import { createUseStyles } from "react-jss";
+import IconMail from '../../assets/icon-mail.svg'
 
 const useTextFieldStyles = createUseStyles({
-	root: {
-		height: '100%',
+	input: {
+		backgroundImage: `url(${IconMail})`,
+		backgroundRepeat: "no-repeat",
+		backgroundPosition: "16px center",
+		boxShadow: "10px 10px 30px 0px #0000000f",
+		padding: [24, 24, 24, 56],
+		fontSize: 16,
+		fontWeight: 400,
+		lineHeight: "20px",
 		flex: 1,
-		border: 'none',
-		padding: [32, 16],
-		borderRadius: 0,
-		boxShadow: "10px 10px 30px rgba(0, 0, 0, 0.06)",
-		"&::placeholder": {
-			color: "#202020",
-			opacity: 0.3,
-			fontsize: 16,
-		}
-	},
+		border: 0
+	}
 })
 
 export default useTextFieldStyles;

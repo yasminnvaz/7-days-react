@@ -6,18 +6,22 @@ type MenuProps = {
 }
 
 const Menu = ({ items }: MenuProps) => {
-	const classes = useMenuStyles();
+	const { menu } = useMenuStyles();
 
 	return (
-		<div className={classes.root}>
-			<img src={logo} className={classes.logo} alt="logo" />
-			<ul className={classes.menu}>
-				{items &&
-					items.map((item, index) => {
-						return <li key={index} className={classes.item}>{item}</li>
-					})}
-			</ul>
-		</div>
+		<header className={menu}>
+			<img src={logo} alt="logo" />
+			<nav>
+				<ul>
+					{items &&
+						items.map((item, index) => {
+							return <li key={index}>
+								<a href="/">{item}</a>
+							</li>
+						})}
+				</ul>
+			</nav>
+		</header>
 	);
 }
 

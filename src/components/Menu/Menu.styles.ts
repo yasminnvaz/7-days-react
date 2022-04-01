@@ -1,32 +1,44 @@
 import { createUseStyles } from "react-jss";
 
 const useMenuStyles = createUseStyles({
-	root: {
-		height: 48,
-		display: 'flex',
-		justifyContent: 'space-evenly',
-	},
 	menu: {
 		display: 'flex',
-		gap: 16,
-		margin: 0,
-		padding: 0,
-		alignItems: 'flex-end',
-		fontSize: 16,
-	},
-	logo: {
-		height: 40
-	},
-	item: {
-		listStyleType: 'none',
-		'&:after': {
-			content: '"/"',
-			marginLeft: 12,
+		justifyContent: 'space-around',
+		marginTop: 12,
+		padding: [0, 16],
+		"& img": {
+			height: 48
 		},
-		'&:last-child:after': {
-			content: '""'
+		"& nav": {
+			display: 'flex',
+			alignItems: 'end',
+		},
+		"& ul": {
+			margin: 0,
+			padding: 0,
+			display: 'flex',
+			gap: 8
+		},
+		"& li": {
+			listStyle: 'none',
+			'&:after': {
+				content: '"/"',
+				marginLeft: 12,
+			},
+			'&:last-child:after': {
+				content: '""'
+			},
+			"& a": {
+				textDecoration: 'none',
+				fontWeight: 400,
+				fontSize: 16,
+				lineHeight: '20px',
+				"&:hover": {
+					textDecoration: 'underline',
+				}
+			}
 		}
-	}
+	},
 })
 
 export default useMenuStyles;

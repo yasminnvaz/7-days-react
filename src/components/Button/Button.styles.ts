@@ -2,17 +2,13 @@ import { createUseStyles } from "react-jss";
 
 const useButtonStyles = createUseStyles({
 	root: {
-		height: '100%',
-		width: 192,
+		height: 68,
 		backgroundColor: "#FFCB47",
 		color: "#FFFFFF",
 		fontSize: 16,
-		border: 'none',
+		border: 0,
 		padding: [0, 16],
-		boxShadow: "10px 10px 30px rgba(255, 203, 71, 0.3)",
-		"&:hover": {
-			cursor: "pointer",
-		}
+		boxShadow: "10px 10px 30px 0px #ffcb474d",
 	},
 })
 

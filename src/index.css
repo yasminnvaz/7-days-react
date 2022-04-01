@@ -4,8 +4,33 @@ html {
 	padding: 0;
 }
 
+body {
+	background-image: url('./assets/shape.svg'), url('./assets/background.svg');
+	background-repeat: no-repeat, repeat-x;
+	background-position: right top;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	color: #202020,
+	color: #202020;
+	margin: 0;
+	padding: 0;
+}
+
+a,
+button,
+input {
+	transition: .3s ease-in-out;
+}
+
+button {
+	cursor: pointer;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+	opacity: .5;
 }

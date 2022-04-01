@@ -6,11 +6,11 @@ type TextFieldProps = {
 }
 
 const TextField = ({ placeholder, type = "text" }: TextFieldProps) => {
-	const classes = useTextFieldStyles();
+	const { input } = useTextFieldStyles();
 
 	return (
 		<input
-			className={classes.root}
+			className={input}
 			placeholder={placeholder}
 			type={type}
 		/>
